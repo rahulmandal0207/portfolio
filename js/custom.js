@@ -19,8 +19,8 @@ Assigned to: ThemeForest
 		var $this = $(window);
 
 		//bg window height Js
-		var window_height = window.innerHeight;
-		$(".prt_about_info").css("height", window_height);
+		//var window_height = window.innerHeight;
+		//$(".prt_about_info").css("height", window_height);
 
 		//Portfolio Load More
 		$(".prt_loadmore").slice(0, 3).show();

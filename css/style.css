@@ -127,7 +127,7 @@ button:focus {
     padding-bottom: 15px;
 }
 
-.prt_heading h1:after {
+/*.prt_heading h1:after {
     content: "";
     position: absolute;
     background-color: #ffffff;
@@ -135,7 +135,7 @@ button:focus {
     height: 2px;
     top: 100%;
     left: 0;
-}
+}*/
 
 .prt_heading p {
     text-align: right;
@@ -233,6 +233,7 @@ button:focus {
 
 .prt_about_details p {
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .prt_about_details a.prt_btn {
@@ -243,6 +244,7 @@ button:focus {
 .prt_about_edulearn_wrapper {
     display: inline-block;
     width: 100%;
+    margin: 5rem 0 0 0;
 }
 
 .prt_about_learnsection {
@@ -798,140 +800,6 @@ button:focus {
     transition: all 0.3s;
 }
 
-/*---------- Portfolio css Start -------*/
-.prt_portfolio_wrapper {
-    background-color: #010101;
-    position: absolute;
-    right: 100%;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-    display: none;
-    padding: 80px 0px 0px;
-}
-
-button.prt_btn.prt_btn_portfolio {
-    margin: 0px 0px 80px;
-}
-
-.prt_loadmore {
-    display: none;
-}
-
-.prt_portfolio_box {
-    display: inline-block;
-    width: 100%;
-}
-
-.prt_portfolio_box a {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.prt_portfolio_img {
-    display: inline-block;
-    width: auto;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.prt_portfolio_img:after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 0;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.prt_portfolio_img:hover:after {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.prt_portfolio_img img {
-    display: inline-block;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.prt_portfolio_img:hover img {
-    display: inline-block;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.prt_portfolio_img:hover .prt_portfolio_text {
-    bottom: 0;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.prt_portfolio_text {
-    position: absolute;
-    bottom: -111px;
-    left: 0px;
-    width: 100%;
-    text-align: left;
-    padding: 30px;
-    z-index: 1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.prt_portfolio_text h4 {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #000000;
-    margin-top: 0px;
-}
-
-.prt_portfolio_text p {
-    margin: 0px;
-    text-transform: capitalize;
-    color: #000000;
-}
-
 /*---------- Footer css Start -------*/
 .prt_footer_wrapper {
     background-color: #0a0a0a;
@@ -1010,6 +878,8 @@ button.prt_btn.prt_btn_portfolio {
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
+
 
 /*---------- Main Wrapper css End -------*/
 /*---------- Responsive css Start -------*/
@@ -1182,7 +1052,47 @@ button.prt_btn.prt_btn_portfolio {
         right: 0;
         margin: 0px auto;
     }
+
+
+    .nav_links {
+        display: none !important;
+    }
+
+    .prt_about_experiencebox::after {
+        width: 100%;
+    }
+
+    .prt_about_experiencebox {
+        padding: 50px 10px 50px 10px;
+    }
+
+    .prt_about_experience_year h1,
+    .prt_about_experience_year h4 {
+        text-align: center !important;
+    }
+
+    .prt_about_learnsection {
+        padding: 0 10px;
+    }
+
+    .field {
+        display: none !important;
+    }
+
+    .prt_heading {
+        /*margin-top: 60px;*/
+        margin-bottom: 0 !important;
+    }
+
+    .name h1 {
+        font-size: 4rem !important;
+    }
+
+    .prt_about_info {
+        padding: 30px 0 0 0;
+    }
 }
+
 
 @media (min-width: 620px) and (max-width: 700px) {
     .prt_services_slider_imgs {
@@ -1319,8 +1229,6 @@ button.prt_btn.prt_btn_portfolio {
     }
 }
 
-
-
 .name {
     height: 100%;
     justify-content: center;
@@ -1339,6 +1247,7 @@ button.prt_btn.prt_btn_portfolio {
     font-family: "Dancing Script", cursive;
     font-weight: 100;
     font-size: 7rem;
+    color: var(--accent-clr);
 }
 
 .owl-stage {
@@ -1357,7 +1266,6 @@ button.prt_btn.prt_btn_portfolio {
     align-items: center;
     justify-content: space-around;
     width: 300px;
-
 }
 
 .mouse {
