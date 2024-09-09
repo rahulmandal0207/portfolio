@@ -23,13 +23,31 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/fonts.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font-awesome.css",
+              "src/assets/css/magnific-popup.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/owl.theme.default.min.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery.magnific-popup.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/plugin/countto/jquery.countTo.js",
+              "src/assets/js/plugin/countto/jquery.appear.js",
+              "src/assets/js/circles.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {
