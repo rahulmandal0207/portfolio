@@ -53,6 +53,7 @@ header {
     width: 250px;
     font-size: 1.5em;
     margin-top: 1em;
+    padding-left: 0 !important;
 }
 
 .social a {
@@ -156,6 +157,7 @@ main .container {
     position: relative;
     color: #34495E;
     z-index: -1;
+    font-size: 1em;
 }
 
 .text h3::after {
@@ -168,13 +170,14 @@ main .container {
 }
 
 .text>h1 {
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .text .typed-text {
     display: flex;
     margin-bottom: 1em;
     color: #34495E;
+
 }
 
 .text .typed-text span {
@@ -219,7 +222,7 @@ main .container {
 }
 
 .profession h1 {
-    font-size: 2em;
+    font-size: 1.5em;
 
 }
 
@@ -230,7 +233,7 @@ main .container {
 }
 
 #home .typed-cursor {
-    color: red;
+    color: var(--accent-clr);
     font-weight: 100;
 }
 
@@ -271,6 +274,7 @@ main .container {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .image img {
@@ -297,13 +301,20 @@ main .container {
     #secondary-nav .nav-links {
         display: flex;
     }
+
+    .image {
+        display: none;
+    }
 }
 
 
 
-
-
 @media (max-width: 520px) {
+
+
+    .social {
+        margin-top: 0 !important;
+    }
 
     #main-nav .logo {
         font-weight: 600;
@@ -357,6 +368,7 @@ main .container {
 
     .image img {
         width: 300px;
+        display: none;
     }
 
     .social {

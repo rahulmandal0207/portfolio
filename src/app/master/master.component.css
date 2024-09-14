@@ -1,0 +1,9 @@
+
+nav h2,
+nav a {
+    color: var(--hero-text);
+}
+
+nav h2 {
+    font-weight: 500;
+}

@@ -1,0 +1,13 @@
+.prt_about_learnbox_info {
+    border-radius: .5em;
+    padding: 1em;
+}
+
+.prt_about_learnbox_info h4,
+.prt_about_learnbox_info span {
+    color: var(--hero-text);
+}
+
+.prt_about_learnbox_info span { 
+    font-size: .8em;
+}

@@ -13,11 +13,9 @@ export class HeroComponent {
     window.setTimeout(this.startTyping, 100);
   }
 
-
-
   startTyping() {
     new Typed('.multiText', {
-      strings: ['Student', 'Coder', 'Web Developer'],
+      strings: ['MCA Student', 'Work as a Developer'],
       typeSpeed: 100,
       backSpeed: 80,
       loop: true,
