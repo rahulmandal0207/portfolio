@@ -3,9 +3,11 @@
 
 :root {
     --hero-text: #34495E;
-    --primary-bg-clr: #ECF0F1;
+    /*--primary-bg-clr: #ECF0F1;*/
+    --primary-bg-clr: #E1F5FE;
     --primary-text-clr: #7F8C8D;
-    --secondary-text-clr: #000000;
+    --primary-text-hover-clr: #81D4FA;
+    --secondary-text-clr: #37474F;
     --accent-clr: #f6483b;
 }
 
@@ -298,7 +300,7 @@ button:focus {
 
 .prt_about_learnbox_right:hover:after {
     background-color: #ffffff;
-    border: 3px solid #f6483b;
+    border: 3px solid var(--primary-text-hover-clr);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -308,8 +310,8 @@ button:focus {
 
 .prt_about_learnbox_left:hover .prt_about_learnbox_info,
 .prt_about_learnbox_right:hover .prt_about_learnbox_info {
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+    /*background-color: #fff;*/
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .prt_about_learnbox_left {
@@ -345,7 +347,7 @@ button:focus {
 
 .prt_about_learnbox_left:hover:after {
     background-color: #ffffff;
-    border: 3px solid #f6483b;
+    border: 3px solid var(--primary-text-hover-clr);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -354,7 +356,7 @@ button:focus {
 }
 
 .prt_about_learnbox_right:hover .prt_about_learnbox_year h1 {
-    color: #f6483b;
+    color: var(--primary-text-hover-clr);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -363,7 +365,7 @@ button:focus {
 }
 
 .prt_about_learnbox_left:hover .prt_about_learnbox_year h1 {
-    color: #f6483b;
+    color: var(--primary-text-hover-clr);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -386,6 +388,7 @@ button:focus {
     font-size: 60px;
     margin: 0px;
     /*color: #202020;*/
+    color: var(--primary-text-clr);
     font-weight: 500;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -455,6 +458,7 @@ button:focus {
 }
 
 .prt_about_learnbox_info p {
+    color: var(--secondary-text-clr);
     margin: 0px;
 }
 
@@ -497,7 +501,7 @@ button:focus {
 .prt_about_experiencebox:after {
     content: "";
     position: absolute;
-    background-color: #ECF0F1;
+    background-color: var(--primary-bg-clr);
     top: 0;
     right: 0;
     bottom: 0;
@@ -508,12 +512,13 @@ button:focus {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    border-radius: .2em;
 }
 
 .prt_about_experiencebox:hover:after {
     /*background-color: rgba(255, 255, 255, 0.2);   */
     background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -522,7 +527,7 @@ button:focus {
 }
 
 .prt_about_experiencebox:hover .prt_about_experience_year h1 {
-    color: #f6483b;
+    color: var(--primary-text-hover-clr);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
@@ -577,11 +582,13 @@ button:focus {
     text-transform: capitalize;
     margin-bottom: 10px;
     font-size: .8em;
+    color: var(--secondary-text-clr);
 
 }
 
 .prt_about_experience_info p {
     margin: 0px;
+    color: var(--secondary-text-clr);
 }
 
 .prt_profile_info {
@@ -1624,6 +1631,6 @@ button:focus {
 }
 
 
-.prt_heading h1{
+.prt_heading h1 {
     color: var(--hero-text) !important;
 }
